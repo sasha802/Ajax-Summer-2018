@@ -1,19 +1,31 @@
 function validateForm() {
 
-    var userInput = document.getElementById('userName').value;
-    var inputResult = document.getElementById('inputResult');
-    var output = '';
-    console.log(userInput);
-    console.log(inputResult);
+    var currentMessage = document.getElementById('message');
 
-    if ( !isNaN(userInput) ) {
+    if ( currentMessage ) {
 
-        output = '<span style="color: red;">Please enter your name</span>';
-
-    } else {
-
-        output = '<span style="color: #00008b">Welcome ' + userInput + '!</span>';
+        currentMessage.parentNode.removeChild(currentMessage);
     }
 
-    inputResult.innerHTML = output;
+
+    var h3 = document.createElement('h3');
+
+    h3.id = 'message';
+
+    var userInput = document.getElementById('userName').value;
+    var errorMessage = document.createTextNode('Please enter your name');
+    var successMessage = document.createTextNode('Welcome ' + userInput);
+
+
+    if ( userInput.length == 0 ) {
+
+        document.body.appendChild(h3);
+        h3.appendChild(errorMessage);
+
+    }  else if ( userInput.length > 0 ) {
+
+        document.body.appendChild(h3);
+        h3.appendChild(successMessage);
+
+    }
 }
