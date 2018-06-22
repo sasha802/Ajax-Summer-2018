@@ -7,11 +7,19 @@ function init() {
     var name = 'Sasha';
     var bornInMadison = false;
 
-    var information = document.getElementById('information');
+    console.log('Id is: ' + id);
+    console.log('Name is: ' + name);
+    console.log('Born in Madison is: ' + bornInMadison);
 
-    information.innerHTML = 'My id is ' + id + '<br />';
-    information.innerHTML += 'My name is ' + name + '<br />';
-    information.innerHTML += 'Born in Madison is ' + bornInMadison;
+    var userInformation = 'My name is ' + name + '. ';
+        userInformation += 'My id is ' + id + ' ';
+        userInformation += 'and born in Madison is ' + bornInMadison;
+
+    var textNode = document.createTextNode(userInformation);
+    var h3 = document.createElement('h3');
+    h3.id = 'information';
+    h3.appendChild(textNode);
+    document.body.appendChild(h3);
 
     printLabTitle();
 }
