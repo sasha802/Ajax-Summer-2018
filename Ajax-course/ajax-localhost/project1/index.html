@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project1</title>
+    <script type="text/javascript" src="script/houseConfiguration.js"></script>
+</head>
+<body>
+    <h1>Project 1 - Javascript Fundamentals</h1>
+
+    <form>
+
+        <div>
+            <label>Select House Type</label>
+            <select id="hoseType">
+                <option value="">-- Select Type --</option>
+                <option value="singleStory">Single Story</option>
+                <option value="towStory">Two Story</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Select Color</label>
+            <select id="color">
+                <option value="">-- Select Color --</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="beige">Beige</option>
+                <option value="green">Green</option>
+                <option value="grey">Grey</option>
+            </select>
+        </div>
+
+        <div>
+            <label id="carsNumber">Garage (# of vehicles)</label>
+            <input type="radio" name="vehicles" value="one" /> One
+            <input type="radio" name="vehicles" value="two" checked/> Two
+            <input type="radio" name="vehicles" value="three" /> Three
+        </div>
+
+        <div>
+            <label>Exterior Material</label>
+            <select id="materialType">
+                <option value="">-- Select Material --</option>
+                <option value="vinyl">Vinyl</option>
+                <option value="wood">Wood</option>
+                <option value="brick">Brick</option>
+                <option value="stucco">Stucco</option>
+                <option value="stone">Stone</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Square Footage</label>
+            <input id="sqFootage" type="text" value="" />
+        </div>
+
+    </form>
+
+    <div>
+        <input type="submit" value="Get Detailed Estimate" onclick="displayEstimate();" />
+    </div>
+
+
+
+</body>
+</html>
