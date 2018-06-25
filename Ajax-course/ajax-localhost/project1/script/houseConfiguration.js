@@ -32,13 +32,33 @@ function houseConfigurationData() {
 
     var sqFootageUserInputString = document.getElementById('sqFootage').value;
 
+    var sqFootageUserInputInt = parseInt(sqFootageUserInputString);
+
+
+    var oneStoryHouseCost = 175;
+    var twoStoryHouseCost = 135;
+    var garageCostPerVehicle = 15000;
+    var vinylCost = 0;
+    var woodCost = 5000;
+    var brickCost = 8000;
+    var stuccoCost = 6000;
+    var stoneCost = 16000;
+    var materialExtraCostPerSqFoot = 10;
 
     validateHouseTypeInput(houseTypeUserInput);
     validateColorUserInput(colorUserInput);
     validateMaterialTypeUserInput(materialTypeUserInput);
-    validateFootageUserInput(sqFootageUserInputString);
+    validateFootageUserInput(sqFootageUserInputInt);
 
 
+    var houseTypeCost = calculateHouseTypeCost(oneStoryHouseCost, twoStoryHouseCost, houseTypeUserInput, sqFootageUserInputInt);
+    var garageCost = calculateGarageCost(garageCostPerVehicle, vehiclesUserInput);
+    var externalMaterialCost = calculateExternalMaterialCost(vinylCost, woodCost, brickCost, stuccoCost, stoneCost,
+                                materialExtraCostPerSqFoot, sqFootageUserInputInt, materialTypeUserInput);
+
+    var totalEstimate = calculateTotalEstimate(houseTypeCost, garageCost, externalMaterialCost);
+
+    console.log(totalEstimate);
 }
 
 
@@ -50,9 +70,6 @@ function validateHouseTypeInput(houseTypeUserInput) {
 
         getErrorMessage();
 
-    } else {
-
-        console.log(houseTypeUserInput);
     }
 
 }
@@ -66,9 +83,6 @@ function validateColorUserInput(colorUserInput) {
 
         getErrorMessage();
 
-    } else {
-
-        console.log(colorUserInput);
     }
 
 }
@@ -82,27 +96,101 @@ function validateMaterialTypeUserInput(materialTypeUserInput) {
 
         getErrorMessage();
 
-    } else {
-
-        console.log(materialTypeUserInput);
     }
 }
 
 
-function validateFootageUserInput(sqFootageUserInputString) {
+function validateFootageUserInput(sqFootageUserInputInt) {
 
     errorMessage = 'Please enter number of square footage';
 
-    var sqFootageUserInputInt = parseInt(sqFootageUserInputString);
-
-    if ( sqFootageUserInputString.trim().length == 0 || sqFootageUserInputString.trim() == ''
-        || isNaN(sqFootageUserInputInt) ) {
+    if ( isNaN(sqFootageUserInputInt) ) {
 
         getErrorMessage();
 
-    } else {
-        console.log(sqFootageUserInputString);
     }
+}
+
+
+function calculateHouseTypeCost(oneStoryHouseCost, twoStoryHouseCost, houseTypeUserInput, sqFootageUserInputInt) {
+
+    var houseTypeCost = null;
+
+    if ( houseTypeUserInput == '1' ) {
+
+        houseTypeCost = oneStoryHouseCost * sqFootageUserInputInt;
+
+    } else if ( houseTypeUserInput == '2' ) {
+
+        houseTypeCost = twoStoryHouseCost * sqFootageUserInputInt;
+    }
+
+    return houseTypeCost;
+
+
+}
+
+function calculateGarageCost(garageCostPerVehicle, vehiclesUserInput) {
+
+    var totalGarageCost = null;
+
+
+    if ( vehiclesUserInput == '1' ) {
+
+        totalGarageCost = garageCostPerVehicle;
+
+    } else if ( vehiclesUserInput == '2' ) {
+
+        totalGarageCost = garageCostPerVehicle * 2;
+
+    } else if ( vehiclesUserInput == '3' ) {
+
+        totalGarageCost = garageCostPerVehicle * 3;
+
+    }
+
+    return totalGarageCost;
+
+}
+
+
+function calculateExternalMaterialCost(vinylCost, woodCost, brickCost, stuccoCost, stoneCost,
+                                       materialExtraCostPerSqFoot, sqFootageUserInputInt, materialTypeUserInput) {
+
+    var totalExternalMaterialCost = null;
+
+    if ( materialTypeUserInput == 'vinyl' ) {
+
+        totalExternalMaterialCost = vinylCost;
+
+    } else if ( materialTypeUserInput == 'wood' ) {
+
+        totalExternalMaterialCost = woodCost + (materialExtraCostPerSqFoot * sqFootageUserInputInt);
+
+    } else if ( materialTypeUserInput == 'brick') {
+
+        totalExternalMaterialCost = brickCost + (materialExtraCostPerSqFoot * sqFootageUserInputInt);
+
+    } else if ( materialTypeUserInput == 'stucco' ) {
+
+        totalExternalMaterialCost = stuccoCost;
+
+    } else if ( materialTypeUserInput == 'stone' ) {
+
+        totalExternalMaterialCost = stoneCost;
+    }
+
+
+    return totalExternalMaterialCost;
+
+}
+
+
+function calculateTotalEstimate(houseTypeCost, garageCost, externalMaterialCost) {
+
+    var totalEstimate = houseTypeCost + garageCost + externalMaterialCost;
+
+    return totalEstimate;
 }
 
 
