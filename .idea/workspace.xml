@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3aab85f-6d38-4d4d-854b-e97c7ed7a33d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/project1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/project1/script/houseConfiguration.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajax-course/demo/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/demo/demo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajax-course/demo/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/demo/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajax-course/demo/demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/demo/demo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajax-course/week01/lab1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/week01/lab1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajax-course/week01/lab1.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/week01/lab1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajax-course/week01/lab2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/week01/lab2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajax-course/week01/lab2.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/week01/lab2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ajax-course/ajax-localhost/project1/script/houseConfiguration.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/project1/script/houseConfiguration.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/week01/lab1.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+              <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -43,7 +35,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/project1/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
+            <state relative-caret-position="682">
               <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
             </state>
           </provider>
@@ -52,8 +44,8 @@
       <file leaf-file-name="houseConfiguration.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/project1/script/houseConfiguration.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="1276">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
@@ -98,8 +90,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="508" />
-    <option name="y" value="198" />
+    <option name="x" value="849" />
+    <option name="y" value="117" />
     <option name="width" value="1635" />
     <option name="height" value="1242" />
   </component>
@@ -109,6 +101,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Ajax-Summer-2018" type="cbb8eebc:String" user="Ajax-Summer-2018" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Ajax-Summer-2018" type="cbb8eebc:String" user="Ajax-Summer-2018" />
+              <item name="Ajax-course" type="cbb8eebc:String" user="Ajax-course" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Ajax-Summer-2018" type="cbb8eebc:String" user="Ajax-Summer-2018" />
+              <item name="Ajax-course" type="cbb8eebc:String" user="Ajax-course" />
+              <item name="ajax-localhost" type="cbb8eebc:String" user="ajax-localhost" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Ajax-Summer-2018" type="cbb8eebc:String" user="Ajax-Summer-2018" />
+              <item name="Ajax-course" type="cbb8eebc:String" user="Ajax-course" />
+              <item name="ajax-localhost" type="cbb8eebc:String" user="ajax-localhost" />
+              <item name="project1" type="cbb8eebc:String" user="project1" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Ajax-Summer-2018" type="cbb8eebc:String" user="Ajax-Summer-2018" />
+              <item name="Ajax-course" type="cbb8eebc:String" user="Ajax-course" />
+              <item name="ajax-localhost" type="cbb8eebc:String" user="ajax-localhost" />
+              <item name="project1" type="cbb8eebc:String" user="project1" />
+              <item name="script" type="cbb8eebc:String" user="script" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -148,43 +177,6 @@
               <item name="Ajax-course" type="462c0819:PsiDirectoryNode" />
               <item name="ajax-localhost" type="462c0819:PsiDirectoryNode" />
               <item name="week01" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Ajax-Summer-2018" type="cbb8eebc:String" user="Ajax-Summer-2018" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Ajax-Summer-2018" type="cbb8eebc:String" user="Ajax-Summer-2018" />
-              <item name="Ajax-course" type="cbb8eebc:String" user="Ajax-course" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Ajax-Summer-2018" type="cbb8eebc:String" user="Ajax-Summer-2018" />
-              <item name="Ajax-course" type="cbb8eebc:String" user="Ajax-course" />
-              <item name="ajax-localhost" type="cbb8eebc:String" user="ajax-localhost" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Ajax-Summer-2018" type="cbb8eebc:String" user="Ajax-Summer-2018" />
-              <item name="Ajax-course" type="cbb8eebc:String" user="Ajax-course" />
-              <item name="ajax-localhost" type="cbb8eebc:String" user="ajax-localhost" />
-              <item name="project1" type="cbb8eebc:String" user="project1" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Ajax-Summer-2018" type="cbb8eebc:String" user="Ajax-Summer-2018" />
-              <item name="Ajax-course" type="cbb8eebc:String" user="Ajax-course" />
-              <item name="ajax-localhost" type="cbb8eebc:String" user="ajax-localhost" />
-              <item name="project1" type="cbb8eebc:String" user="project1" />
-              <item name="script" type="cbb8eebc:String" user="script" />
             </path>
           </expand>
           <select />
@@ -233,15 +225,16 @@
       <workItem from="1529542055762" duration="7399000" />
       <workItem from="1529632764521" duration="1689000" />
       <workItem from="1529805020319" duration="5350000" />
-      <workItem from="1529846342537" duration="8020000" />
+      <workItem from="1529846342537" duration="8079000" />
+      <workItem from="1529888255470" duration="2817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29929000" />
+    <option name="totallyTimeSpent" value="32805000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="508" y="198" width="1635" height="1242" extended-state="0" />
+    <frame x="849" y="117" width="1635" height="1242" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14862385" />
@@ -272,6 +265,34 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/week01/lab1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/week01/lab1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/project1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/project1/script/houseConfiguration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/week01/lab1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -332,21 +353,21 @@
     <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/week01/lab1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/project1/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
+        <state relative-caret-position="682">
           <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/project1/script/houseConfiguration.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="1276">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>

@@ -3,18 +3,7 @@ var errorMessage = '';
 
 function displayEstimate() {
 
-    var errorMessage = document.getElementsByClassName('message');
-
-
-    for ( var index = 0; index < errorMessage.length; index ++ ) {
-
-        console.log(errorMessage[index]);
-
-        if ( errorMessage[index] ) {
-            errorMessage[index].parentNode.removeChild(errorMessage[index]);
-        }
-    }
-
+    removeErrorMessage();
     houseConfigurationData();
     
 }
@@ -42,7 +31,6 @@ function houseConfigurationData() {
     var materialTypeUserInput = materialType.options[materialType.selectedIndex].value;
 
     var sqFootageUserInputString = document.getElementById('sqFootage').value;
-    var sqFootageUserInputInt = parseInt(sqFootageUserInputString);
 
 
     validateHouseTypeInput(houseTypeUserInput);
@@ -69,6 +57,7 @@ function validateHouseTypeInput(houseTypeUserInput) {
 
 }
 
+
 function validateColorUserInput(colorUserInput) {
 
     errorMessage = 'Please enter color';
@@ -84,6 +73,7 @@ function validateColorUserInput(colorUserInput) {
 
 }
 
+
 function validateMaterialTypeUserInput(materialTypeUserInput) {
 
     errorMessage = 'Please enter material type';
@@ -98,11 +88,15 @@ function validateMaterialTypeUserInput(materialTypeUserInput) {
     }
 }
 
+
 function validateFootageUserInput(sqFootageUserInputString) {
 
-    errorMessage = 'Please enter square footage';
+    errorMessage = 'Please enter number of square footage';
 
-    if ( sqFootageUserInputString.trim().length == 0 || sqFootageUserInputString.trim() == '') {
+    var sqFootageUserInputInt = parseInt(sqFootageUserInputString);
+
+    if ( sqFootageUserInputString.trim().length == 0 || sqFootageUserInputString.trim() == ''
+        || isNaN(sqFootageUserInputInt) ) {
 
         getErrorMessage();
 
@@ -124,6 +118,16 @@ function getErrorMessage() {
 }
 
 
+function removeErrorMessage() {
+
+    var errorMessage = document.getElementsByClassName('message');
+
+    while ( errorMessage.length > 0 ) {
+
+        errorMessage[0].remove();
+
+    }
+}
 
 
 
