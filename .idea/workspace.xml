@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3aab85f-6d38-4d4d-854b-e97c7ed7a33d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Ajax-course/ajax-localhost/project1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/project1/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ajax-course/ajax-localhost/project1/script/houseConfiguration.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/project1/script/houseConfiguration.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,8 +43,8 @@
       <file leaf-file-name="houseConfiguration.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/project1/script/houseConfiguration.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="735">
+              <caret line="224" column="40" lean-forward="true" selection-start-line="224" selection-start-column="40" selection-end-line="224" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -231,12 +230,12 @@
       <workItem from="1529632764521" duration="1689000" />
       <workItem from="1529805020319" duration="5350000" />
       <workItem from="1529846342537" duration="8079000" />
-      <workItem from="1529888255470" duration="8152000" />
+      <workItem from="1529888255470" duration="11122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38140000" />
+    <option name="totallyTimeSpent" value="41110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="772" y="117" width="1731" height="1242" extended-state="0" />
@@ -372,8 +371,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/project1/script/houseConfiguration.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="735">
+          <caret line="224" column="40" lean-forward="true" selection-start-line="224" selection-start-column="40" selection-end-line="224" selection-end-column="40" />
         </state>
       </provider>
     </entry>

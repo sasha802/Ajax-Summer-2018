@@ -35,6 +35,13 @@ function houseConfigurationData() {
     var sqFootageUserInputInt = parseInt(sqFootageUserInputString);
 
 
+    var houseTypeUserInputText = houseType[houseType.selectedIndex].text;
+    var colorUserInputText = color.options[color.selectedIndex].text;
+    var externalMaterialUserInputText = materialType.options[materialType.selectedIndex].text;
+
+    console.log(externalMaterialUserInputText);
+
+
     var oneStoryHouseCost = 175;
     var twoStoryHouseCost = 135;
     var garageCostPerVehicle = 15000;
@@ -58,7 +65,9 @@ function houseConfigurationData() {
 
     var totalEstimate = calculateTotalEstimate(houseTypeCost, garageCost, externalMaterialCost);
 
-    console.log(totalEstimate);
+    displayHouseEstimateResult(houseTypeUserInput, houseTypeUserInputText, colorUserInput, colorUserInputText,
+        materialTypeUserInput, externalMaterialUserInputText, sqFootageUserInputInt, vehiclesUserInput, totalEstimate);
+
 }
 
 
@@ -191,6 +200,40 @@ function calculateTotalEstimate(houseTypeCost, garageCost, externalMaterialCost)
     var totalEstimate = houseTypeCost + garageCost + externalMaterialCost;
 
     return totalEstimate;
+}
+
+
+function displayHouseEstimateResult(houseTypeUserInput, houseTypeUserInputText, colorUserInput, colorUserInputText,
+         materialTypeUserInput, externalMaterialUserInputText, sqFootageUserInputInt, vehiclesUserInput, totalEstimate) {
+
+    if ( houseTypeUserInput !== '' && colorUserInput !== '' && materialTypeUserInput !== '' && !isNaN(sqFootageUserInputInt) ) {
+
+        var hr = document.createElement('hr');
+        var h3 = document.createElement('h3');
+        var div = document.createElement('div');
+        var br = document.createElement('br');
+        var message = document.createTextNode('House Estimate Result');
+        var houseTypeOutput = document.createTextNode('House Type ' + houseTypeUserInputText);
+        var colorTypeOutput = document.createTextNode('Color ' + colorUserInputText);
+        var materialOutput = document.createTextNode('External material ' + externalMaterialUserInputText);
+
+        h3.appendChild(message);
+        div.appendChild(houseTypeOutput);
+        div.appendChild(br);
+        div.appendChild(colorTypeOutput);
+        div.appendChild(br);
+        div.appendChild(materialOutput);
+
+        document.body.appendChild(hr);
+        document.body.appendChild(h3);
+        document.body.appendChild(div);
+
+
+    } else {
+
+        return '';
+    }
+
 }
 
 
