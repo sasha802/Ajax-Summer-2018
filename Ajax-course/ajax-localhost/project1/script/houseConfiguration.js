@@ -1,12 +1,21 @@
 
 var errorMessage = '';
 
+var init = function () {
+
+    var submitBtn = document.getElementById('submit');
+    submitBtn.onclick = displayEstimate;
+
+}
+
 function displayEstimate() {
 
     removeErrorMessage();
     houseConfigurationData();
     
 }
+
+
 
 function houseConfigurationData() {
 
@@ -212,17 +221,30 @@ function displayHouseEstimateResult(houseTypeUserInput, houseTypeUserInputText, 
         var h3 = document.createElement('h3');
         var div = document.createElement('div');
         var br = document.createElement('br');
+        var br2 = document.createElement('br');
+        var br3 = document.createElement('br');
+        var br4 = document.createElement('br');
+        var br5 = document.createElement('br');
         var message = document.createTextNode('House Estimate Result');
         var houseTypeOutput = document.createTextNode('House Type ' + houseTypeUserInputText);
         var colorTypeOutput = document.createTextNode('Color ' + colorUserInputText);
         var materialOutput = document.createTextNode('External material ' + externalMaterialUserInputText);
+        var sqFootageOutput = document.createTextNode('Square Footage ' + sqFootageUserInputInt);
+        var vehiclesOutput = document.createTextNode('Number of vehicles ' + vehiclesUserInput);
+        var estimateOUtput = document.createTextNode('Total estimate ' + totalEstimate);
 
         h3.appendChild(message);
         div.appendChild(houseTypeOutput);
         div.appendChild(br);
         div.appendChild(colorTypeOutput);
-        div.appendChild(br);
+        div.appendChild(br2);
         div.appendChild(materialOutput);
+        div.appendChild(br3);
+        div.appendChild(sqFootageOutput);
+        div.appendChild(br4);
+        div.appendChild(vehiclesOutput);
+        div.appendChild(br5);
+        div.appendChild(estimateOUtput);
 
         document.body.appendChild(hr);
         document.body.appendChild(h3);
