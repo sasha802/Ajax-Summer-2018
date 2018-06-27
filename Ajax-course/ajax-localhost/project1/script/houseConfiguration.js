@@ -11,13 +11,14 @@ var init = function () {
 function displayEstimate() {
 
     removeErrorMessage();
+    removeEstimateOutput();
     houseConfigurationData();
-    
+
 }
 
 
-
 function houseConfigurationData() {
+
 
     var houseType = document.getElementById('hoseType');
     var houseTypeUserInput = houseType.options[houseType.selectedIndex].value;
@@ -48,8 +49,6 @@ function houseConfigurationData() {
     var colorUserInputText = color.options[color.selectedIndex].text;
     var externalMaterialUserInputText = materialType.options[materialType.selectedIndex].text;
 
-    console.log(externalMaterialUserInputText);
-
 
     var oneStoryHouseCost = 175;
     var twoStoryHouseCost = 135;
@@ -76,6 +75,7 @@ function houseConfigurationData() {
 
     displayHouseEstimateResult(houseTypeUserInput, houseTypeUserInputText, colorUserInput, colorUserInputText,
         materialTypeUserInput, externalMaterialUserInputText, sqFootageUserInputInt, vehiclesUserInput, totalEstimate);
+
 
 }
 
@@ -148,6 +148,7 @@ function calculateHouseTypeCost(oneStoryHouseCost, twoStoryHouseCost, houseTypeU
 
 }
 
+
 function calculateGarageCost(garageCostPerVehicle, vehiclesUserInput) {
 
     var totalGarageCost = null;
@@ -218,8 +219,11 @@ function displayHouseEstimateResult(houseTypeUserInput, houseTypeUserInputText, 
     if ( houseTypeUserInput !== '' && colorUserInput !== '' && materialTypeUserInput !== '' && !isNaN(sqFootageUserInputInt) ) {
 
         var hr = document.createElement('hr');
+        hr.id = 'hrSeparator';
         var h3 = document.createElement('h3');
+        h3.id = 'heading';
         var div = document.createElement('div');
+        div.id = 'estimateOutput';
         var br = document.createElement('br');
         var br2 = document.createElement('br');
         var br3 = document.createElement('br');
@@ -231,7 +235,7 @@ function displayHouseEstimateResult(houseTypeUserInput, houseTypeUserInputText, 
         var materialOutput = document.createTextNode('External material ' + externalMaterialUserInputText);
         var sqFootageOutput = document.createTextNode('Square Footage ' + sqFootageUserInputInt);
         var vehiclesOutput = document.createTextNode('Number of vehicles ' + vehiclesUserInput);
-        var estimateOUtput = document.createTextNode('Total estimate ' + totalEstimate);
+        var estimateOutput = document.createTextNode('Total estimate ' + totalEstimate);
 
         h3.appendChild(message);
         div.appendChild(houseTypeOutput);
@@ -244,7 +248,7 @@ function displayHouseEstimateResult(houseTypeUserInput, houseTypeUserInputText, 
         div.appendChild(br4);
         div.appendChild(vehiclesOutput);
         div.appendChild(br5);
-        div.appendChild(estimateOUtput);
+        div.appendChild(estimateOutput);
 
         document.body.appendChild(hr);
         document.body.appendChild(h3);
@@ -265,9 +269,9 @@ function getErrorMessage() {
     h4.className = 'message';
 
     var messageTextNode = document.createTextNode(errorMessage);
+    h4.appendChild(messageTextNode);
     document.body.appendChild(h4);
 
-    h4.appendChild(messageTextNode);
 }
 
 
@@ -277,11 +281,37 @@ function removeErrorMessage() {
 
     while ( errorMessage.length > 0 ) {
 
-        errorMessage[0].remove();
+        errorMessage[0].parentNode.removeChild(errorMessage[0]);
 
     }
 }
 
+
+function removeEstimateOutput() {
+
+    var estimateOutput = document.getElementById('estimateOutput');
+    var heading = document.getElementById('heading');
+    var hr = document.getElementById('hrSeparator');
+
+    if ( hr ) {
+
+        hr.parentNode.removeChild(hr);
+
+    }
+
+    if ( heading ) {
+
+        heading.parentNode.removeChild(heading);
+
+    }
+
+    if ( estimateOutput ) {
+
+        estimateOutput.parentNode.removeChild(estimateOutput);
+
+    }
+
+}
 
 
 
