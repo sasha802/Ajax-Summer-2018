@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3aab85f-6d38-4d4d-854b-e97c7ed7a33d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/week02/lab4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/week02/script/lab4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajax-course/ajax-localhost/demo/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/demo/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajax-course/ajax-localhost/demo/demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/demo/demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ajax-course/ajax-localhost/week02/script/lab4.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/week02/script/lab4.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,8 +36,8 @@
       <file leaf-file-name="lab4.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/week02/script/lab4.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+            <state relative-caret-position="858">
+              <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -234,12 +230,12 @@
       <workItem from="1529980389058" duration="3064000" />
       <workItem from="1530064575834" duration="7308000" />
       <workItem from="1530238935112" duration="1590000" />
-      <workItem from="1530318166065" duration="3131000" />
+      <workItem from="1530318166065" duration="3345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56281000" />
+    <option name="totallyTimeSpent" value="56495000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="787" y="100" width="1432" height="1242" extended-state="0" />
@@ -537,8 +533,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/week02/script/lab4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        <state relative-caret-position="858">
+          <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
         </state>
       </provider>
     </entry>

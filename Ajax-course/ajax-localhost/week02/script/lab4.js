@@ -11,7 +11,7 @@ var init = function () {
 
     inline;
 
-    
+
     averageBtn.onclick = dotNotation;
     goodBtn.onclick = dotNotation;
     excellentBtn.onclick = dotNotation;
