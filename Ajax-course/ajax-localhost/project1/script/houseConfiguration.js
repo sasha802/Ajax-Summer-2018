@@ -235,7 +235,7 @@ function displayHouseEstimateResult(houseTypeUserInput, houseTypeUserInputText, 
         var materialOutput = document.createTextNode('External material ' + externalMaterialUserInputText);
         var sqFootageOutput = document.createTextNode('Square Footage ' + sqFootageUserInputInt);
         var vehiclesOutput = document.createTextNode('Number of vehicles ' + vehiclesUserInput);
-        var estimateOutput = document.createTextNode('Total estimate ' + totalEstimate);
+        var estimateOutput = document.createTextNode('Total estimate $' + totalEstimate);
 
         h3.appendChild(message);
         div.appendChild(houseTypeOutput);
