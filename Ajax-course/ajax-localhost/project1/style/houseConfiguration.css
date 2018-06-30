@@ -1,6 +1,14 @@
 body {
 
-    background-color: #fffaf6;
+    background-color: #ffffef;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+label {
+    padding-right: 10px;
 }
 
 .message {
@@ -10,5 +18,6 @@ body {
 }
 
 #formContainer, .message, #estimateOutput, h3 {
-    padding-left: 20px;
+    padding-left: 50px;
+
 }
