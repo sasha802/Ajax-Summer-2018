@@ -82,7 +82,7 @@ function houseConfigurationData() {
 
 function validateHouseTypeInput(houseTypeUserInput) {
 
-    errorMessage = 'Please enter house type';
+    errorMessage = 'Please enter house type *';
 
     if ( houseTypeUserInput.length == 0 ) {
 
@@ -95,7 +95,7 @@ function validateHouseTypeInput(houseTypeUserInput) {
 
 function validateColorUserInput(colorUserInput) {
 
-    errorMessage = 'Please enter color';
+    errorMessage = 'Please enter color *';
 
     if ( colorUserInput.length == 0 ) {
 
@@ -108,7 +108,7 @@ function validateColorUserInput(colorUserInput) {
 
 function validateMaterialTypeUserInput(materialTypeUserInput) {
 
-    errorMessage = 'Please enter material type';
+    errorMessage = 'Please enter material type *';
 
     if ( materialTypeUserInput.length == 0 ) {
 
@@ -120,7 +120,7 @@ function validateMaterialTypeUserInput(materialTypeUserInput) {
 
 function validateFootageUserInput(sqFootageUserInputInt) {
 
-    errorMessage = 'Please enter number of square footage';
+    errorMessage = 'Please enter number of square footage *';
 
     if ( isNaN(sqFootageUserInputInt) ) {
 
@@ -218,28 +218,27 @@ function displayHouseEstimateResult(houseTypeUserInput, houseTypeUserInputText, 
 
     if ( houseTypeUserInput !== '' && colorUserInput !== '' && materialTypeUserInput !== '' && !isNaN(sqFootageUserInputInt) ) {
 
-        var hr = document.createElement('hr');
-        hr.id = 'hrSeparator';
         var h3 = document.createElement('h3');
         h3.id = 'heading';
         var div = document.createElement('div');
         div.id = 'estimateOutput';
-        var br = document.createElement('br');
+        var br1= document.createElement('br');
         var br2 = document.createElement('br');
         var br3 = document.createElement('br');
         var br4 = document.createElement('br');
         var br5 = document.createElement('br');
-        var message = document.createTextNode('House Estimate Result');
-        var houseTypeOutput = document.createTextNode('House Type ' + houseTypeUserInputText);
-        var colorTypeOutput = document.createTextNode('Color ' + colorUserInputText);
-        var materialOutput = document.createTextNode('External material ' + externalMaterialUserInputText);
-        var sqFootageOutput = document.createTextNode('Square Footage ' + sqFootageUserInputInt);
-        var vehiclesOutput = document.createTextNode('Number of vehicles ' + vehiclesUserInput);
-        var estimateOutput = document.createTextNode('Total estimate $' + totalEstimate);
+        var estimateTitle = document.createTextNode('House Estimate Result');
+        var houseTypeOutput = document.createTextNode('House Type: ' + houseTypeUserInputText);
+        var colorTypeOutput = document.createTextNode('Color: ' + colorUserInputText);
+        var materialOutput = document.createTextNode('External material: ' + externalMaterialUserInputText);
+        var sqFootageOutput = document.createTextNode('Square Footage: ' + sqFootageUserInputInt);
+        var vehiclesOutput = document.createTextNode('Number of vehicles: ' + vehiclesUserInput);
+        var estimateOutput = document.createTextNode('Total estimate: $' + totalEstimate);
 
-        h3.appendChild(message);
+
+        h3.appendChild(estimateTitle);
         div.appendChild(houseTypeOutput);
-        div.appendChild(br);
+        div.appendChild(br1);
         div.appendChild(colorTypeOutput);
         div.appendChild(br2);
         div.appendChild(materialOutput);
@@ -250,7 +249,7 @@ function displayHouseEstimateResult(houseTypeUserInput, houseTypeUserInputText, 
         div.appendChild(br5);
         div.appendChild(estimateOutput);
 
-        document.body.appendChild(hr);
+
         document.body.appendChild(h3);
         document.body.appendChild(div);
 
@@ -266,11 +265,14 @@ function displayHouseEstimateResult(houseTypeUserInput, houseTypeUserInputText, 
 function getErrorMessage() {
 
     var h4 = document.createElement('h4');
+    var div = document.createElement('div');
+
     h4.className = 'message';
 
     var messageTextNode = document.createTextNode(errorMessage);
     h4.appendChild(messageTextNode);
-    document.body.appendChild(h4);
+    div.appendChild(h4);
+    document.body.appendChild(div);
 
 }
 

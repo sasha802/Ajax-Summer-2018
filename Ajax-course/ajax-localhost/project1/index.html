@@ -5,16 +5,6 @@
     <title>Project1</title>
     <script type="text/javascript" src="script/houseConfiguration.js"></script>
     <link type="text/css" rel="stylesheet" href="style/houseConfiguration.css">
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 </head>
 <body>
     <h1>Project 1 - Javascript Fundamentals</h1>
@@ -22,8 +12,7 @@
     <div id="formContainer">
 
     <form>
-
-        <div>
+        <div class="formSection">
             <label>Select House Type</label>
             <select id="hoseType">
                 <option value="">-- Select Type --</option>
@@ -32,7 +21,7 @@
             </select>
         </div>
 
-        <div>
+        <div class="formSection">
             <label>Select Color</label>
             <select id="color">
                 <option value="">-- Select Color --</option>
@@ -44,14 +33,7 @@
             </select>
         </div>
 
-        <div>
-            <label id="carsNumber">Garage (# of vehicles)</label>
-            <input type="radio" name="vehicles" value="1" /> One
-            <input type="radio" name="vehicles" value="2" checked/> Two
-            <input type="radio" name="vehicles" value="3" /> Three
-        </div>
-
-        <div>
+        <div class="formSection">
             <label>Exterior Material</label>
             <select id="materialType">
                 <option value="">-- Select Material --</option>
@@ -63,9 +45,16 @@
             </select>
         </div>
 
-        <div>
+        <div class="formSection">
             <label>Square Footage</label>
             <input id="sqFootage" type="text" value="" />
+        </div>
+
+        <div class="formSection">
+            <label id="carsNumber">Garage (# of vehicles)</label>
+            <input type="radio" name="vehicles" value="1" /> One
+            <input type="radio" name="vehicles" value="2" checked/> Two
+            <input type="radio" name="vehicles" value="3" /> Three
         </div>
 
         <br />
@@ -75,7 +64,6 @@
         </div>
 
     </form>
-
     </div>
 </body>
 </html>
