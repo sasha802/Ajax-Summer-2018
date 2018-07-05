@@ -14,6 +14,7 @@ var init = function () {
     var buttonText = 'click me';
     var buttonTextNode = document.createTextNode(buttonText);
 
+
     button.appendChild(buttonTextNode);
     div.appendChild(input);
     div.appendChild(button);

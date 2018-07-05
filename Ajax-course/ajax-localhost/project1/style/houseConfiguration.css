@@ -4,12 +4,14 @@ body {
 }
 
 h1 {
+
     padding-bottom: 20px;
     color: #1f684f;
     padding-left: 50px;
 }
 
 h3 {
+
     color: #5f72b1;
 }
 
@@ -19,12 +21,14 @@ form {
 }
 
 label {
+
     padding-right: 10px;
     color: #000081;
     font-weight: bold;
 }
 
 .formSection {
+
     padding-top: 10px;
     padding-bottom: 20px;
 }
@@ -38,6 +42,7 @@ label {
 }
 
 #formContainer, #estimateOutput, h3 {
+
     padding-left: 50px;
 
 }

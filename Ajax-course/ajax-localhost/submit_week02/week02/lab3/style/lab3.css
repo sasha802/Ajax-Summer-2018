@@ -1,14 +1,15 @@
 body {
 
-    background-color: #72838e !important;
+    background-color: #b6d2dd !important;
 }
 
 form {
+
     padding: 100px;
 }
 
 .form-control {
 
     margin-bottom: 10px;
-
+    width: 400px !important;
 }
