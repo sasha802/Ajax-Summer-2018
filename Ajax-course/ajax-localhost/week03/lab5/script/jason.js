@@ -20,13 +20,13 @@ var init = function() {
                     },
                     {
                         'id':25,
-                        'name':'Sivan',
-                        'email':'mike@mail.com'
+                        'name':'Jackie',
+                        'email':'jackie@mail.com'
                     },
                     {
                         'id':26,
                         'name':'Luke',
-                        'email':'mike@mail.com'
+                        'email':'luke@mail.com'
                     }
                ];
                
@@ -37,11 +37,23 @@ var init = function() {
 
 function outputStudents() {
 
+    var h4 = document.createElement('h4');
+    var div = document.createElement('div');
+    document.body.appendChild(h4);
+    document.body.appendChild(div);
+
+
     for ( var index = 0; index < students.length; index ++ ) {
-        
-        console.log(students[index].id);
-        console.log(students[index].email);
-    
+
+        var br = document.createElement('br');
+
+        var outputId = document.createTextNode('Student Id: ' + students[index].id + ' | ');
+        var outputEmail = document.createTextNode('Student Email: ' + students[index].email);
+
+        div.appendChild(br);
+        div.appendChild(outputId);
+        div.appendChild(outputEmail);
+
     }
 }
 
