@@ -1,0 +1,41 @@
+
+body {
+    background-color: #f9ead4;
+}
+
+h1 {
+    color: #44220b;
+}
+
+#project2Container {
+    width:800px;
+    margin:0 auto;
+}
+
+#sunImg {
+    font-size:50px;
+    color: #ff4c0c;
+    padding-left: 10px;
+}
+
+#coldImg {
+    font-size: 50px;
+    color: #1452ff;
+    padding-left: 10px;
+}
+
+#imageBox {
+    position: absolute;
+    padding-left: 100px;
+    margin-top: -20px;
+}
+
+
+#h3Wind {
+    width: 20%;
+    float: left;
+}
+
+#imageBox img {
+    width: 100px;
+}
