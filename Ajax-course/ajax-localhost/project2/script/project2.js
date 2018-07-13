@@ -149,16 +149,16 @@ function runWeatherConditionRequest(latitude, longitude) {
                 span.id = 'hotTemperatureImg';
                 h3Temperature.appendChild(span);
 
-                $('#hotTemperatureImg').html('<i id="sunImg" class="fa">&#xf185;</i>');
+                $('#hotTemperatureImg').append('<i id="sunImg" class="fa">&#xf185;</i>');
 
 
-            } else if ( temperatureOutput <= 34 ) {
+            } else if ( temperatureOutput <= 32 ) {
 
                 var span = document.createElement('span');
                 span.id = 'coldTemperatureImg';
                 h3Temperature.appendChild(span);
 
-                $('#coldTemperatureImg').html('<i id="coldImg" class="fa fa-thermometer-empty"></i>');
+                $('#coldTemperatureImg').append('<i id="coldImg" class="fa fa-thermometer-empty"></i>');
 
             }
 
@@ -167,8 +167,11 @@ function runWeatherConditionRequest(latitude, longitude) {
                 var div = document.createElement('div');
                 div.id = 'imageBox';
                 var temperatureContainer = document.getElementById('temperatureContainer');
+                var img = document.createElement('img');
+                img.src = 'images/wind2.png';
+                img.alt = 'wind';
+                div.appendChild(img);
                 temperatureContainer.appendChild(div);
-                $(div).html('<img src="images/wind2.png" />');
 
             }
 

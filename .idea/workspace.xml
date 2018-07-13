@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3aab85f-6d38-4d4d-854b-e97c7ed7a33d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ajax-course/ajax-localhost/project2/script/project2.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/project2/script/project2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajax-course/ajax-localhost/project2/styles/project2.css" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/project2/styles/project2.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,8 +26,8 @@
       <file leaf-file-name="project2.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/project2/script/project2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="164" column="30" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="30" />
+            <state relative-caret-position="541">
+              <caret line="154" column="47" selection-start-line="154" selection-start-column="47" selection-end-line="154" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -57,6 +57,7 @@
       <find>console</find>
       <find>removeErrorMessage</find>
       <find>conso</find>
+      <find>c</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -278,12 +279,12 @@
       <workItem from="1531266504159" duration="7065000" />
       <workItem from="1531358191102" duration="4156000" />
       <workItem from="1531444728466" duration="9650000" />
-      <workItem from="1531494392814" duration="14803000" />
+      <workItem from="1531494392814" duration="16480000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124359000" />
+    <option name="totallyTimeSpent" value="126036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1047" y="41" width="1496" height="1242" extended-state="0" />
@@ -626,8 +627,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/project2/script/project2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="164" column="30" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="30" />
+        <state relative-caret-position="541">
+          <caret line="154" column="47" selection-start-line="154" selection-start-column="47" selection-end-line="154" selection-end-column="47" />
         </state>
       </provider>
     </entry>
