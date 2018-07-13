@@ -27,14 +27,14 @@ function displayWeatherResult() {
     $('#temperatureContainer').remove();
 
 
-    var numericRegex = /^[0-9]+$/;
+    var numericRegex = /^[0-9]{5}$/;
     var userZipcode = document.getElementById('zipcodeInput').value;
 
 
-    if ( userZipcode.length == 0 && userZipcode == '' || !userZipcode.match(numericRegex)) {
+    if ( userZipcode == '' || !userZipcode.match(numericRegex)) {
 
         var userInputContainer = document.getElementById('userInputContainer');
-        var message = document.createTextNode('* Please enter zip code (has to be a number).)');
+        var message = document.createTextNode('* Please enter zip code (has to be a number).');
         var span = document.createElement('span');
         span.id = 'errorMessage';
         span.appendChild(message);
@@ -114,6 +114,10 @@ function runWeatherConditionRequest(latitude, longitude) {
             var temperatureCelsius = parseInt(temperatureString);
             var windSpeed = parseInt(windSpeedString);
 
+            var windDirectionString = result.weatherObservation.windDirection;
+            var windDirection = parseInt(windDirectionString);
+
+
 
             var temperatureFahrenheit = temperatureCelsius * 1.8 + 32;
             var temperatureOutput = Math.round(temperatureFahrenheit);
@@ -127,14 +131,16 @@ function runWeatherConditionRequest(latitude, longitude) {
             var h3Wind = document.createElement('h3');
             h3Wind.id = 'h3Wind';
             var temperature = document.createTextNode(temperatureOutput + '\u00B0 Fahrenheit');
-            var wind = document.createTextNode(windSpeed + ' mph Wind');
 
 
             h3Temperature.appendChild(temperature);
-            h3Wind.appendChild(wind);
             div.appendChild(h3Temperature);
             div.appendChild(h3Wind);
             project2Container.appendChild(div);
+
+
+
+            getWindDirection(windSpeed, windDirection);
 
 
             if ( temperatureOutput >= 83 ) {
@@ -173,4 +179,61 @@ function runWeatherConditionRequest(latitude, longitude) {
     xhr.send(null);
 
 }
+
+
+function getWindDirection(windSpeed, windDirection) {
+
+    var h3Wind = document.getElementById('h3Wind');
+
+    var windDirectionOutput = '';
+
+
+    if ( windDirection == 0 ) {
+
+        windDirectionOutput = 'N';
+
+    } else if ( windDirection > 0 && windDirection <= 45 ) {
+
+        windDirectionOutput = 'NE';
+
+    } else if ( windDirection > 45 && windDirection <= 90 ) {
+
+        windDirectionOutput = 'E';
+
+    } else if ( windDirection > 90 && windDirection <= 135 ) {
+
+        windDirectionOutput = 'SE';
+
+    } else if ( windDirection > 135 && windDirection <= 180 ) {
+
+        windDirectionOutput = 'S';
+
+    } else if ( windDirection > 180 && windDirection <= 225 ) {
+
+        windDirectionOutput = 'SW';
+
+    } else if ( windDirection > 225 && windDirection <= 270 ) {
+
+        windDirectionOutput = 'W';
+
+    } else if ( windDirection > 270 && windDirection <= 315 ) {
+
+        windDirectionOutput = 'NW';
+
+    } else if ( windDirection > 315 && windDirection <= 360 ) {
+
+        windDirectionOutput = 'N';
+    }
+
+    var windOutput = document.createTextNode(windSpeed + ' mph ' + windDirectionOutput + ' Wind');
+
+    h3Wind.appendChild(windOutput);
+
+}
+
+
+
+
+
+
 
