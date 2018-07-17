@@ -1,3 +1,33 @@
+
+function init() {
+
+    runAjaxRequest();
+}
+
+
+function runAjaxRequest() {
+
+    var xhr = new XMLHttpRequest();
+    var url = 'response.php';
+
+    xhr.open('GET', url);
+
+    xhr.onreadystatechange = function() {
+
+        if ( xhr.readyState == 4 && xhr.status == 200 ) {
+
+
+            var response = eval('(' + xhr.responseText + ')');
+
+        }
+    }
+
+    xhr.send(null);
+}
+
+
+
+/*
 function init() {
 
     var btnAjax = document.getElementById('btnAjax');
@@ -33,4 +63,4 @@ function ajax() {
 
 
     xhr.send(null);
-}
+}*/

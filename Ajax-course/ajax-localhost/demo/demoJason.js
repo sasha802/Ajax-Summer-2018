@@ -1,3 +1,78 @@
+
+function init() {
+
+    var xmlData = '<states>\n' +
+        '    <state>\n' +
+        '        <abbreviation>WI</abbreviation>\n' +
+        '        <fulltext>Wisconsin</fulltext>\n' +
+        '    </state>\n' +
+        '    <state>\n' +
+        '        <abbreviation>IL</abbreviation>\n' +
+        '        <fulltext>Illinois</fulltext>\n' +
+        '    </state>\n' +
+        '    <state>\n' +
+        '        <abbreviation>MN</abbreviation>\n' +
+        '        <fulltext>Minnesota</fulltext>\n' +
+        '    </state>\n' +
+        '</states>';
+
+
+    var jasonDataStates = [
+
+        {
+            'abbreviation': 'WI',
+            'fulltext': 'Wisconsin'
+        },
+
+        {
+            'abbreviation': 'IL',
+            'fulltext': 'Illinois'
+        },
+
+        {
+            'abbreviation': 'MN',
+            'fulltext': 'Minnesota'
+        }
+
+    ];
+
+    var abbreviation = jasonDataStates[1].abbreviation;
+    var fulltext = jasonDataStates[1].fulltext;
+
+    console.log(abbreviation);
+    console.log(fulltext);
+
+
+   /* for ( var index = 0; index < jasonDataStates.length; index ++ ) {
+        console.log(jasonDataStates[index].abbreviation);
+    }*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 var fruits;
 
 function addFruit() {
@@ -57,10 +132,10 @@ var init = function() {
                 }
              ];
      
-/*               
+/!*
    delete fruits[1];
    console.log(fruits);
-*/
+*!/
    
  
     
@@ -76,3 +151,4 @@ var init = function() {
 
 
 
+*/

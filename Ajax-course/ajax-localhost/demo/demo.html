@@ -9,11 +9,36 @@
 <body>
     <h1>Demo</h1>
     <p id="text"></p>
-    
+    <input type="text" id="click" value="" />
+
     <input type="button" id="butnClick" value="Click here" />
 </body>
 </html>
 
 <script>
     init();
+    
+    var click = document.getElementById('click').value;
+    var butnClick = document.gaeElementById('butnClick');
+    butnClick.onclick = function() {
+      check;
+    }
+    
+    function check() {
+    console.log(click);
+    
+    if(isNaN(click)){
+      alert("it is not number");
+    }else {
+      alert("its a valid number");
+    }
+    }
+    
 </script>
+
+
+
+
+
+
+
