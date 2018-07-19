@@ -1,8 +1,8 @@
 
 $(document).ready(function () {
 
-    var message = 'cubs stink'
-    $('li').text(message);
+    var newText = 'cubs stink'
+    $('li').text(newText);
 
     var headerContent = $('#header').html();
     console.log('header id content: ' + headerContent);
