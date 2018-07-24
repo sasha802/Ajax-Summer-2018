@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3aab85f-6d38-4d4d-854b-e97c7ed7a33d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/project3/project3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/project3/script/project3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajax-course/ajax-localhost/week05/lab07/script/lab7.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/week05/lab07/script/lab7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ajax-course/ajax-localhost/project3/script/project3.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax-course/ajax-localhost/project3/script/project3.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,8 +43,8 @@
       <file leaf-file-name="project3.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/project3/script/project3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+            <state relative-caret-position="176">
+              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -141,8 +138,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="854" />
-    <option name="y" value="83" />
+    <option name="x" value="1293" />
+    <option name="y" value="65" />
     <option name="width" value="1505" />
     <option name="height" value="1242" />
   </component>
@@ -313,15 +310,15 @@
       <workItem from="1531793818342" duration="393000" />
       <workItem from="1531966635487" duration="3327000" />
       <workItem from="1532214076690" duration="993000" />
-      <workItem from="1532400129532" duration="1560000" />
+      <workItem from="1532400129532" duration="2035000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151059000" />
+    <option name="totallyTimeSpent" value="151534000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="854" y="83" width="1505" height="1242" extended-state="0" />
+    <frame x="1293" y="65" width="1505" height="1242" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49436253" visible="true" weight="0.2152824" />
@@ -596,13 +593,6 @@
     <entry file="file://$PROJECT_DIR$/../PHP-2018/phpByWeek/project/php-localhost/project01/madlibs.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/project3/ToDo/allTasks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/project3/ToDo/deleteTask.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -645,10 +635,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/project3/ToDo/allTasks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Ajax-course/ajax-localhost/project3/script/project3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        <state relative-caret-position="176">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
         </state>
       </provider>
     </entry>
