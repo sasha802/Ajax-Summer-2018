@@ -5,7 +5,7 @@ $(document).ready(function () {
     $('li').text(newText);
 
     var headerContent = $('#header').html();
-    console.log('header id content: ' + headerContent);
+    console.log('content of the id = header ' + headerContent);
 
 
     var link = $('.link');
