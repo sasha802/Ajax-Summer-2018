@@ -1,0 +1,19 @@
+#table {
+    border-collapse: collapse;
+     width: 50%;
+}
+
+td {
+    border: 1px solid grey;
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #e2def8;
+}
+
+#trashIcon {
+    font-size: 18px;
+}
+
