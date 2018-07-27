@@ -23,66 +23,73 @@ $(document).ready(function () {
 
         } else {
 
-            $.get( addTaskUrl, {'description': inputTask}, function(addTaskResponse) {
+           $.get( addTaskUrl, {'description': inputTask}, function(addTaskResponse) {
 
+                console.log('add task id ' + addTaskResponse.id);
 
-                var taskIdAdd = addTaskResponse.id;
-                var taskDescriptionAdd = addTaskResponse.description;
+                var taskId = addTaskResponse.id;
+                var taskDescription = addTaskResponse.description;
 
-                displayTask(taskIdAdd, taskDescriptionAdd);
+                displayTask(taskId, taskDescription);
 
             }, 'json' );
         }
 
     });
 
+    $.ajax(allTasksUrl, {
 
-    $.get( allTasksUrl, function(allTasksResponse) {
+        success: function(allTasksResponse) {
 
-        var taskLength = $(allTasksResponse).find('task').length;
-
-            console.log('task length ' + taskLength);
 
             $(allTasksResponse).find('task').each(function () {
 
-                var taskId = $(this).find('id').text();
-                var taskDescription = $(this).find('description').text();
-
-                displayTask(taskId, taskDescription);
-
+                 var taskId = $(this).find('id').text();
+                 var taskDescription = $(this).find('description').text();
+                 displayTask(taskId, taskDescription);
             });
-        
-    }, 'xml' );
+
+        },
+        error: function() {
+
+            outputWarning();
+        },
+        responseType: 'xml'
+    });
 
 });
 
 
-function displayTask(taskIdOutput, taskDescriptionOutput) {
+function displayTask(taskId, taskDescription) {
 
-    var deleteButton = $('<button type="submit" id="' + taskIdOutput + '"><i id="trashIcon" class="fa fa-trash"></i></button>');
 
-    $('#table').append('<tr>');
+    var deleteButton = $('<button type="submit" id="btn' + taskId + '"><i id="trashIcon" class="fa fa-trash"></i></button>');
+
+    $('#table').append('<tr id="' + taskId +'">');
     $('tr').last().append('<td>');
     $('td').last().append(deleteButton);
     $('tr').last().append('<td>');
-    $('td').last().append(taskDescriptionOutput);
-    $('tr').last().append('<td>');
-    $('td').last().append(taskIdOutput);
+    $('td').last().append(taskDescription);
 
-    $('button').on('click', function () {
 
-        var $this = $(this);
+    $('#btn' + taskId).on('click', function () {
 
-        var taskIdToDelete = $this.closest('tr').children('td:last-child').text()
         var deleteTaskUrl = 'ToDo/deleteTask.php';
+        
+        $.ajax(deleteTaskUrl,{
 
-        $.get(deleteTaskUrl, {'id': taskIdToDelete}, function (taskDeletedResponse) {
+            data: {
+                'id': taskId
+            },
+            success: function (taskDeletedResponse) {
 
-            if ( taskDeletedResponse == 1 ) {
+                $('tr#'+ taskId +'').remove();
 
-                $this.parents('tr').remove();
+                console.log(taskId);
+            },
+            error: function () {
+                outputWarning();
             }
-
         });
     });
 }
@@ -90,7 +97,7 @@ function displayTask(taskIdOutput, taskDescriptionOutput) {
 
 function outputWarning() {
 
-    var h3Warning = $('<h3 id="warningMessage">You have no tasks.</h3>');
+    var h3Warning = $('<h3 id="warningMessage">Response Error.</h3>');
     h3Warning.appendTo('body');
 
 }
