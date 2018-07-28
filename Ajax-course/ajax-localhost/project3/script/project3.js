@@ -1,7 +1,8 @@
 $(document).ready(function () {
 
+    $('div #taskStatus').remove();
 
-    $('<table id="table"></table>').appendTo('body');
+    $('<table id="table"></table>').appendTo('#project3Container');
 
     var btnAddTask = $('#btnAddTask');
     var allTasksUrl = 'ToDo/allTasks.php';
@@ -10,6 +11,7 @@ $(document).ready(function () {
     btnAddTask.click(function() {
 
         $('#inputError').remove();
+        $('#taskStatus').remove();
 
 
         var inputTaskTemp = $('#inputAddTask').val();
@@ -18,14 +20,11 @@ $(document).ready(function () {
 
         if ( inputTask.length === 0 && inputTask === '' ) {
 
-            var errorMessage = $('<span id="inputError">*Please enter your task</span>');
-            errorMessage.insertBefore('#table');
+            userInputErrorMessage();
 
         } else {
 
            $.get( addTaskUrl, {'description': inputTask}, function(addTaskResponse) {
-
-                console.log('add task id ' + addTaskResponse.id);
 
                 var taskId = addTaskResponse.id;
                 var taskDescription = addTaskResponse.description;
@@ -41,13 +40,17 @@ $(document).ready(function () {
 
         success: function(allTasksResponse) {
 
-
             $(allTasksResponse).find('task').each(function () {
 
                  var taskId = $(this).find('id').text();
                  var taskDescription = $(this).find('description').text();
                  displayTask(taskId, taskDescription);
             });
+
+            if ( $('#table tr').length === 0  ) {
+
+                outputTaskStatusMessage();
+            }
 
         },
         error: function() {
@@ -61,7 +64,6 @@ $(document).ready(function () {
 
 
 function displayTask(taskId, taskDescription) {
-
 
     var deleteButton = $('<button type="submit" id="btn' + taskId + '"><i id="trashIcon" class="fa fa-trash"></i></button>');
 
@@ -85,7 +87,11 @@ function displayTask(taskId, taskDescription) {
 
                 $('tr#'+ taskId +'').remove();
 
-                console.log(taskId);
+                if ( $('#table tr').length === 0  ) {
+
+                    outputTaskStatusMessage();
+                }
+
             },
             error: function () {
                 outputWarning();
@@ -98,10 +104,21 @@ function displayTask(taskId, taskDescription) {
 function outputWarning() {
 
     var h3Warning = $('<h3 id="warningMessage">Response Error.</h3>');
-    h3Warning.appendTo('body');
-
+    h3Warning.insertBefore('#table');
 }
 
+
+function outputTaskStatusMessage() {
+
+    var taskStatusMessage = $('<div id="taskStatus">You have no tasks</div>');
+    taskStatusMessage.insertBefore('#table');
+}
+
+function userInputErrorMessage() {
+
+    var errorMessage = $('<div id="inputError">*Please enter your task</div>');
+    errorMessage.insertBefore('#table');
+}
 
 
 

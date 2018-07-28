@@ -1,16 +1,32 @@
+body {
+    background-color: #780030;
+}
+#project3Container {
+    background-color: #b56c7630;
+    width:800px;
+    margin:0 auto;
+    text-align: center;
+}
+
 #table {
     border-collapse: collapse;
-     width: 50%;
+    width: 100%;
+    display: inline-table;
 }
 
 td {
-    border: 1px solid grey;
+    border: 1px solid #5a0f0f24;
     text-align: left;
     padding: 10px;
+    color: #fff;
 }
 
 tr:nth-child(even) {
-    background-color: #e2def8;
+    background-color: #963f5f;
+}
+
+tr:nth-child(odd) {
+    background-color: #8a3756;
 }
 
 #trashIcon {
