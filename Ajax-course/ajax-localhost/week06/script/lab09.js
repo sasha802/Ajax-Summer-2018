@@ -1,30 +1,23 @@
 $(document).ready(function () {
 
-    $(function() {
-        $( "#inputEmail" ).tooltip({
+    $("#inputEmail").tooltip({
             content: "<strong>enter your email</strong>",
             track:true
         });
-    });
-    $(function() {
-        $( "#inputPassword" ).tooltip({
+
+    $("#inputPassword").tooltip({
             content: "<strong>enter your password</strong>",
             track:true
         });
-    });
-    $(function() {
-        $( "#inputBirthdate" ).tooltip({
+
+    $("#inputBirthdate").tooltip({
             content: "<strong>enter your birthdate</strong>",
             track:true
         });
-    });
 
-    $( function() {
-        $( "#inputBirthdate" ).datepicker({
+    $("#inputBirthdate").datepicker({
             changeMonth: true,
             changeYear: true
-        });
-    } );
-
+    });
 
 });

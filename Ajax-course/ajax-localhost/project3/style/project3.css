@@ -3,6 +3,9 @@ body {
 }
 #project3Container {
     background-color: #b56c7630;
+    box-shadow: 10px 16px 21px -3px rgba(51,25,25,0.42);
+    -webkit-box-shadow: 10px 16px 21px -3px rgba(51,25,25,0.42);
+    -moz-box-shadow: 10px 16px 21px -3px rgba(51,25,25,0.42);
     width:800px;
     margin:0 auto;
     text-align: center;
@@ -37,7 +40,7 @@ h2 {
 
 td {
     border: 1px solid #5a0f0f24;
-    text-align: left;
+    text-align: center;
     padding: 10px;
     color: #fff;
     font-size: 30px;
@@ -51,7 +54,15 @@ tr:nth-child(odd) {
     background-color: #8a3756;
 }
 
-#trashIcon {
-    font-size: 30px;
+#table button {
+    border: none;
+    background-color: #78003000;
 }
+
+#trashIcon {
+    font-size: 35px;
+    color: #fff
+}
+
+
 
